@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <title>Formula 1 home</title>
+    <style>
+      @media (max-width: 600px) {
+        .image{
+          display: none;
+        }
+        .button{
+          display: none;
+        }
+      }
+      @media (min-width: 601px) {
+        .small_button{
+          display: none;
+        }
+      }
+      button{
+        width: 150px;
+        height: 30px;
+        font-size: 20px;
+        background-color: LightGray;
+      }
+      button:hover{
+        background-color: white;
+      }
+      h1{
+        color:red;
+        text-align:center;"
+      }
+    </style>
+  </head>
+  <body>
+    <table class="button">
+      <tr>
+        <th>
+          <form action="/">
+              <button class="btn btn-primary" type="submit">Home</button>
+          </form>
+        </th>
+        <th>
+          <form action="/drivers">
+              <button class="btn btn-primary" type="submit">Drivers</button>
+          </form>
+        </th>
+        <th>
+          <form action="/teams">
+              <button class="btn btn-primary" type="submit">Teams</button>
+          </form>
+        </th>
+        <th>
+          <form action="/standings">
+              <button class="btn btn-primary" type="submit">Standings</button>
+          </form>
+        </th>
+        <th>
+          <form action="/calendar">
+              <button class="btn btn-primary" type="submit">Calendar</button>
+          </form>
+        </th>
+      </tr>
+    </table>
+    <form class="small_button" action="/">
+        <button class="btn btn-primary" type="submit">Home</button>
+    </form>
+    <form class="small_button" action="/drivers">
+      <button class="btn btn-primary" type="submit">Drivers</button>
+    </form>
+    <form class="small_button" action="/teams">
+      <button class="btn btn-primary" type="submit">Teams</button>
+    </form>
+    <form class="small_button" action="/standings">
+      <button class="btn btn-primary" type="submit">Standings</button>
+    </form>
+    <form class="small_button" action="/calendar">
+      <button class="btn btn-primary" type="submit">Calendar</button>
+    </form>
+    <h1>{{ headline }}</h1>
+    <img src="https://visor.ph/wp-content/uploads/2018/07/f1-fonts-main.jpg#.Xblchw-QaQc.link">
+  </body>
+</html>

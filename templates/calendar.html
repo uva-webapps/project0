@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <style>
+      @media (max-width: 600px) {
+        .image{
+          display: none;
+        }
+        .button{
+          display: none;
+        }
+      }
+      @media (min-width: 601px) {
+        .small_button{
+          display: none;
+        }
+      }
+      button{
+        width: 150px;
+        height: 30px;
+        font-size: 20px;
+        background-color: LightGray;
+      }
+      button:hover{
+        background-color: white;
+      }
+      table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+      table, th, form{
+        border: 0px;
+      }
+      th, td {
+        padding: 5px;
+      }
+      th {
+        text-align: left;
+      }
+      h1{
+        color:red;
+        text-align:center;"
+      }
+      a::before{
+        content: "\21d2";
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <table class="button">
+      <tr>
+        <th>
+          <form action="/">
+              <button class="btn btn-primary" type="submit">Home</button>
+          </form>
+        </th>
+        <th>
+          <form action="/drivers">
+              <button class="btn btn-primary" type="submit">Drivers</button>
+          </form>
+        </th>
+        <th>
+          <form action="/teams">
+              <button class="btn btn-primary" type="submit">Teams</button>
+          </form>
+        </th>
+        <th>
+          <form action="/standings">
+              <button class="btn btn-primary" type="submit">Standings</button>
+          </form>
+        </th>
+        <th>
+          <form action="/calendar">
+              <button class="btn btn-primary" type="submit">Calendar</button>
+          </form>
+        </th>
+      </tr>
+    </table>
+    <form class="small_button" action="/">
+        <button class="btn btn-primary" type="submit">Home</button>
+    </form>
+    <form class="small_button" action="/drivers">
+      <button class="btn btn-primary" type="submit">Drivers</button>
+    </form>
+    <form class="small_button" action="/teams">
+      <button class="btn btn-primary" type="submit">Teams</button>
+    </form>
+    <form class="small_button" action="/standings">
+      <button class="btn btn-primary" type="submit">Standings</button>
+    </form>
+    <form class="small_button" action="/calendar">
+      <button class="btn btn-primary" type="submit">Calendar</button>
+    </form>
+    <h1>{{ headline }}</h1>
+    <table style="width:100%">
+      <tr>
+        <th title="Race Nr.">Race Nr.</th>
+        <th title="Grand Prix">Grand Prix</th>
+        <th title="Circuit">Circuit</th>
+        <th title="Date">Date</th>
+      </tr>
+      <tr>
+        <td align="right">1</td>
+        <td>
+          <a href="https://en.wikipedia.org/wiki/Melbourne_Grand_Prix_Circuit">
+            Australian Grand Prix Australia Melbourne Grand Prix Circuit</a>
+        </td>
+        <td> Melbourne</td>
+        <td> 17 March</td>
+      </tr>
+      <tr>
+        <td align="right">2</td>
+        <td>
+          <a href="https://en.wikipedia.org/wiki/Bahrain_International_Circuit">
+            Bahrain Grand Prix	Bahrain Bahrain International Circuit</a>
+        </td>
+        <td> Sakhir</td>
+        <td> 31 March</td>
+      </tr>
+      <tr>
+        <td align="right">3</td>
+        <td>
+          <a href="https://en.wikipedia.org/wiki/Shanghai_International_Circuit">
+          Chinese Grand Prix	China Shanghai International Circuit</a>
+        </td>
+        <td> Shanghai</td>
+        <td> 14 April</td>
+      </tr>
+      <tr>
+        <td align="right">4</td>
+        <td>
+          <a href="https://en.wikipedia.org/wiki/Baku_City_Circuit">
+          Azerbaijan Grand Prix	Azerbaijan Baku City Circuit</a>
+        </td>
+        <td> Baku</td>
+        <td> 28 April</td>
+      </tr>
+      <tr>
+        <td align="right">5</td>
+        <td>
+          <a href="https://en.wikipedia.org/wiki/Circuit_de_Barcelona-Catalunya">
+          Spanish Grand Prix	Spain Circuit de Barcelona-Catalunya</a>
+        </td>
+        <td> Montmeló</td>
+        <td> 12 May</td>
+      </tr>
+      <tr>
+        <td align="right">6</td>
+        <td>
+          <a href="https://en.wikipedia.org/wiki/Circuit_de_Monaco">
+          Monaco Grand Prix	Monaco Circuit de Monaco</a>
+        </td>
+        <td> Monte Carlo</td>
+        <td> 26 May</td>
+      </tr>
+      <tr>
+        <td align="right">7</td>
+        <td>
+          <a href="https://en.wikipedia.org/wiki/Circuit_Gilles_Villeneuve">
+          Canadian Grand Prix	Canada Circuit Gilles Villeneuve</a>
+        </td>
+        <td> Montréal</td>
+        <td> 9 June</td>
+      </tr>
+      <tr>
+        <td align="right">8</td>
+        <td>
+          <a href="https://en.wikipedia.org/wiki/Circuit_Paul_Ricard">
+          French Grand Prix	France Circuit Paul Ricard</a>
+        </td>
+        <td> Le Castellet</td>
+        <td> 23 June</td>
+      </tr>
+      <tr>
+        <td align="right">9</td>
+        <td>
+          <a href="https://en.wikipedia.org/wiki/Red_Bull_Ring">
+          Austrian Grand Prix	Austria Red Bull Ring</a>
+        </td>
+        <td> Spielberg</td>
+        <td> 30 June</td>
+      </tr>
+      <tr>
+        <td align="right">10</td>
+        <td>
+          <a href="https://en.wikipedia.org/wiki/Silverstone_Circuit">
+          British Grand Prix	United Kingdom Silverstone Circuit</a>
+        </td>
+        <td> Silverstone</td>
+        <td> 14 July</td>
+      </tr>
+      <tr>
+        <td align="right">11</td>
+        <td>
+          <a href="https://en.wikipedia.org/wiki/Hockenheimring">
+          German Grand Prix	Germany Hockenheimring</a>
+        </td>
+        <td> Hockenheim</td>
+        <td> 28 July</td>
+      </tr>
+      <tr>
+        <td align="right">12</td>
+        <td>
+          <a href="https://en.wikipedia.org/wiki/Hungaroring">
+          Hungarian Grand Prix	Hungary Hungaroring</a>
+        </td>
+        <td> Mogyoród</td>
+        <td> 4 August</td>
+      </tr>
+      <tr>
+        <td align="right">13</td>
+        <td>
+          <a href="https://en.wikipedia.org/wiki/Circuit_de_Spa-Francorchamps">
+          Belgian Grand Prix	Belgium Circuit de Spa-Francorchamps</a>
+        </td>
+        <td> Stavelot</td>
+        <td> 1 September</td>
+      </tr>
+      <tr>
+        <td align="right">14</td>
+        <td>
+          <a href="https://en.wikipedia.org/wiki/Autodromo_Nazionale_di_Monza">
+          Italian Grand Prix	Italy Autodromo Nazionale Monza</a>
+        </td>
+        <td> Monza</td>
+        <td> 8 September</td>
+      </tr>
+      <tr>
+        <td align="right">15</td>
+        <td>
+          <a href="https://en.wikipedia.org/wiki/Marina_Bay_Street_Circuit">
+          Singapore Grand Prix	Singapore Marina Bay Street Circuit</a>
+        </td>
+        <td> Singapore</td>
+        <td> 22 September</td>
+      </tr>
+      <tr>
+        <td align="right">16</td>
+        <td>
+          <a href="https://en.wikipedia.org/wiki/Sochi_Autodrom">
+          Russian Grand Prix	Russia Sochi Autodrom</a>
+        </td>
+        <td> Sochi</td>
+        <td> 29 September</td>
+      </tr>
+      <tr>
+        <td align="right">17</td>
+        <td>
+          <a href="https://en.wikipedia.org/wiki/Suzuka_International_Racing_Course">
+          Japanese Grand Prix	Japan Suzuka International Racing Course</a>
+        </td>
+        <td> Suzuka</td>
+        <td> 13 October</td>
+      </tr>
+      <tr>
+        <td align="right">18</td>
+        <td>
+          <a href="https://en.wikipedia.org/wiki/Aut%C3%B3dromo_Hermanos_Rodr%C3%ADguez">
+          Mexican Grand Prix	Mexico Autódromo Hermanos Rodríguez</a>
+        </td>
+        <td> Mexico City</td>
+        <td> 27 October</td>
+      </tr>
+      <tr>
+        <td align="right">19</td>
+        <td>
+          <a href="https://en.wikipedia.org/wiki/Circuit_of_the_Americas">
+          United States Grand Prix	United States Circuit of the Americas</a>
+        </td>
+        <td> Austin Texas</td>
+        <td> 3 November</td>
+      </tr>
+      <tr>
+        <td align="right">20</td>
+        <td>
+          <a href="https://en.wikipedia.org/wiki/Aut%C3%B3dromo_Jos%C3%A9_Carlos_Pace">
+          Brazilian Grand Prix	Brazil Autódromo José Carlos Pace</a>
+        </td>
+        <td> São Paulo</td>
+        <td> 17 November</td>
+      </tr>
+      <tr>
+        <td align="right">21</td>
+        <td>
+          <a href="https://en.wikipedia.org/wiki/Yas_Marina_Circuit">
+          Abu Dhabi Grand Prix	United Arab Emirates Yas Marina Circuit</a>
+        </td>
+        <td> Abu Dhabi</td>
+        <td> 1 December</td>
+      </tr>
+    </table>
+  </body>
+</html>
