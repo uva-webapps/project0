@@ -1,26 +1,50 @@
-@media screen and (max-width: 600px) {
-  .image{
-    display: none;
-  }
-  .button{
-    display: none;
-  }
+h1 {
+  color: red;
 }
-@media screen and (min-width: 601px) {
-  .small_button{
-    display: none;
-  }
-}
+
 button {
   width: 150px;
   height: 30px;
   font-size: 20px;
-  background-color: LightGray;
 }
+
 button:hover {
   background-color: white;
 }
-h1{
-  color:red;
-  text-align:center;"
+
+@media screen and (max-width: 600px) {
+  .image {
+    display: none;
+  }
+
+  .button {
+    display: none;
+  }
 }
+@media screen and (min-width: 601px) {
+  .small_button {
+    display: none;
+  }
+}
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+table, th, form {
+  border: 0px;
+}
+
+th, td {
+  padding: 5px;
+}
+
+th {
+  text-align: left;
+}
+
+image {
+  float: right;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,52 @@
+$myColor: red;
+$buttonWidth: 150px;
+$buttonHeight: 30px;
+$buttonFontSize: 20px;
+$buttonBackgroundColor: white;
+$max-width: 600px;
+$min-width: 601px;
+$tablePadding: 5px;
+$imagePosition: right;
+
+h1{
+  color: $myColor;
+}
+button{
+  width: $buttonWidth;
+  height: $buttonHeight;
+  font-size: $buttonFontSize;
+}
+button:hover{
+  background-color: $buttonBackgroundColor;
+}
+@media screen and (max-width: $max-width) {
+  .image{
+    display: none;
+  }
+  .button{
+    display: none;
+  }
+}
+@media screen and (min-width: $min-width) {
+  .small_button{
+    display: none;
+  }
+}
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+table, th, form{
+  border: 0px;
+}
+th, td {
+  padding: $tablePadding;
+}
+th {
+  text:{
+    align: left;
+  }
+}
+image{
+  float: $imagePosition;
+}
