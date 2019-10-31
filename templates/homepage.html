@@ -1,82 +1,134 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./style.css">
     <title>Formula 1 home</title>
-    <style>
-      @media (max-width: 600px) {
-        .image{
-          display: none;
-        }
-        .button{
-          display: none;
-        }
-      }
-      @media (min-width: 601px) {
-        .small_button{
-          display: none;
-        }
-      }
-      button{
-        width: 150px;
-        height: 30px;
-        font-size: 20px;
-        background-color: LightGray;
-      }
-      button:hover{
-        background-color: white;
-      }
-      h1{
-        color:red;
-        text-align:center;"
-      }
-    </style>
   </head>
   <body>
     <table class="button">
       <tr>
         <th>
           <form action="/">
-              <button class="btn btn-primary" type="submit">Home</button>
+              <button class="btn btn-primary" type="button">Home</button>
           </form>
         </th>
         <th>
           <form action="/drivers">
-              <button class="btn btn-primary" type="submit">Drivers</button>
+              <button class="btn btn-primary" type="button">Drivers</button>
           </form>
         </th>
         <th>
           <form action="/teams">
-              <button class="btn btn-primary" type="submit">Teams</button>
+              <button class="btn btn-primary" type="button">Teams</button>
           </form>
         </th>
         <th>
           <form action="/standings">
-              <button class="btn btn-primary" type="submit">Standings</button>
+              <button class="btn btn-primary" type="button">Standings</button>
           </form>
         </th>
         <th>
           <form action="/calendar">
-              <button class="btn btn-primary" type="submit">Calendar</button>
+              <button class="btn btn-primary" type="button">Calendar</button>
           </form>
         </th>
       </tr>
     </table>
     <form class="small_button" action="/">
-        <button class="btn btn-primary" type="submit">Home</button>
+        <button class="btn btn-danger" type="button">Home</button>
     </form>
     <form class="small_button" action="/drivers">
-      <button class="btn btn-primary" type="submit">Drivers</button>
+      <button class="btn btn-danger" type="button">Drivers</button>
     </form>
     <form class="small_button" action="/teams">
-      <button class="btn btn-primary" type="submit">Teams</button>
+      <button class="btn btn-danger" type="button">Teams</button>
     </form>
     <form class="small_button" action="/standings">
-      <button class="btn btn-primary" type="submit">Standings</button>
+      <button class="btn btn-danger" type="button">Standings</button>
     </form>
     <form class="small_button" action="/calendar">
-      <button class="btn btn-primary" type="submit">Calendar</button>
+      <button class="btn btn-danger" type="button">Calendar</button>
     </form>
-    <h1>{{ headline }}</h1>
-    <img src="https://visor.ph/wp-content/uploads/2018/07/f1-fonts-main.jpg#.Xblchw-QaQc.link">
+    <div class="jumbotron text-center">
+      <h1>Formula 1</h1>
+    </div>
+    <div class="container">
+      <div class="row justify-content-md-center">
+        <div class="col-md-auto">
+          <form action="/drivers">
+              <button class="btn btn-dark" type="button"><h6>Drivers<h6></button>
+          </form>
+          <p>
+            <ul>
+              <li>Lewis Hamilton</li>
+              <li>Valtteri Bottas</li>
+              <li>Charles Leclerc</li>
+              <li>Sebastian Vettel</li>
+              <li>Max Verstappen</li>
+              <li>Alex Albon</li>
+              <li>Carlos Sainz jr.</li>
+              <li>Lando Norris</li>
+              <li>Nico Hülkenberg</li>
+              <li>Daniel Ricciardo</li>
+            </ul>
+          <p>
+        </div>
+        <div class="col-md-auto">
+          <form action="/teams">
+              <button class="btn btn-dark" type="button"><h6>Teams<h6></button>
+          </form>
+          <p>
+            <ul>
+              <li>Alfa Romeo Racing</li>
+              <li>Scuderia Ferrari</li>
+              <li>Haas F1 Team</li>
+              <li>Sebastian Vettel</li>
+              <li>McLaren F1 Team</li>
+              <li>Mercedes AMG Petronas Motorsport</li>
+              <li>SportPesa Racing Point F1 Team</li>
+              <li>Aston Martin Red Bull Racing</li>
+              <li>Renault F1 Team</li>
+              <li>Red Bull Toro Rosso Honda</li>
+            </ul>
+          <p>
+        </div>
+        <div class="col-md-auto">
+          <form action="/standings">
+              <button class="btn btn-dark" type="button"><h6>Standings<h6></button>
+          </form>
+          <p>
+            <ul>
+              <li>1. Lewis Hamilton</li>
+              <li>2. Valtteri Bottas</li>
+              <li>3. Charles Leclerc</li>
+              <li>4. Sebastian Vettel</li>
+              <li>5. Max Verstappen</li>
+              <li>6. Pierre Gasly</li>
+              <li>7. Carlos Sainz jr.</li>
+              <li>8. Alexander Albon</li>
+              <li>9. Sergio Pérez</li>
+              <li>10. Daniel Ricciardo</li>
+            </ul>
+          <p>
+        </div>
+        <div class="col-md-auto">
+          <form action="/calendar">
+              <button class="btn btn-dark" type="button"><h6>Calendar<h6></button>
+          </form>
+          <p>
+            <ul>
+              <li>3 November, United Stades Grand Prix</li>
+              <li>17 November, Brazilian Grand Prix</li>
+              <li>1 December, Abu Dhabi Grand Prix</li>
+            </ul>
+          <p>
+        </div>
+      </div>
+    </div>
+    <div class="jumbotron text-center">
+      <img class="image" src="https://visor.ph/wp-content/uploads/2018/07/f1-fonts-main.jpg#.Xblchw-QaQc.link">
+    </div>
   </body>
 </html>

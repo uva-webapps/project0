@@ -1,29 +1,9 @@
-<!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./style.css">
     <style>
-      @media (max-width: 600px) {
-        .image{
-          display: none;
-        }
-        .button{
-          display: none;
-        }
-      }
-      @media (min-width: 601px) {
-        .small_button{
-          display: none;
-        }
-      }
-      button{
-        width: 150px;
-        height: 30px;
-        font-size: 20px;
-        background-color: LightGray;
-      }
-      button:hover{
-        background-color: white;
-      }
       table, th, td {
         border: 1px solid black;
         border-collapse: collapse;
@@ -45,10 +25,6 @@
       image {
         float: right;
       }
-      h1{
-        color:red;
-        text-align:center;"
-      }
     </style>
   </head>
   <body>
@@ -56,160 +32,169 @@
       <tr>
         <th>
           <form action="/">
-              <button class="btn btn-primary" type="submit">Home</button>
+              <button class="btn btn-primary" type="button">Home</button>
           </form>
         </th>
         <th>
           <form action="/drivers">
-              <button class="btn btn-primary" type="submit">Drivers</button>
+              <button class="btn btn-primary" type="button">Drivers</button>
           </form>
         </th>
         <th>
           <form action="/teams">
-              <button class="btn btn-primary" type="submit">Teams</button>
+              <button class="btn btn-primary" type="button">Teams</button>
           </form>
         </th>
         <th>
           <form action="/standings">
-              <button class="btn btn-primary" type="submit">Standings</button>
+              <button class="btn btn-primary" type="button">Standings</button>
           </form>
         </th>
         <th>
           <form action="/calendar">
-              <button class="btn btn-primary" type="submit">Calendar</button>
+              <button class="btn btn-primary" type="button">Calendar</button>
           </form>
         </th>
       </tr>
     </table>
     <form class="small_button" action="/">
-        <button class="btn btn-primary" type="submit">Home</button>
+        <button class="btn btn-danger" type="button">Home</button>
     </form>
     <form class="small_button" action="/drivers">
-      <button class="btn btn-primary" type="submit">Drivers</button>
+      <button class="btn btn-danger" type="button">Drivers</button>
     </form>
     <form class="small_button" action="/teams">
-      <button class="btn btn-primary" type="submit">Teams</button>
+      <button class="btn btn-danger" type="button">Teams</button>
     </form>
     <form class="small_button" action="/standings">
-      <button class="btn btn-primary" type="submit">Standings</button>
+      <button class="btn btn-danger" type="button">Standings</button>
     </form>
     <form class="small_button" action="/calendar">
-      <button class="btn btn-primary" type="submit">Calendar</button>
+      <button class="btn btn-danger" type="button">Calendar</button>
     </form>
-    <h1>{{ headline }}</h1>
-    <section>
-      <image>
-        <img src="https://i.redd.it/g942yig8plm21.jpg" height="400" width="650">
-      </image>
-      <nav>
-        <table style="width:100%">
-          <tr>
-            <th title="Driver nr.">Driver Nr.</th>
-            <th title="Name">Name</th>
-            <th title="Team">Team</th>
-          </tr>
-          <tr>
-              <td align="left">44</td>
-              <td> Lewis Hamilton</td>
-              <td> Mercedes AMG Petronas Motorsport</td>
-          </tr>
-          <tr>
-              <td align="left">77</td>
-              <td> Valtteri Bottas</td>
-              <td> Mercedes AMG Petronas Motorsport</td>
-          </tr>
-          <tr>
-              <td align="left">16</td>
-              <td> Charles Leclerc</td>
-              <td> Scuderia Ferrari</td>
-          </tr>
-          <tr>
-              <td align="left">5</td>
-              <td> Sebastian Vettel</td>
-              <td> Scuderia Ferrari</td>
-          </tr>
-          <tr>
-              <td align="left">33</td>
-              <td> Max Verstappen</td>
-              <td> Aston Martin Red Bull Racing</td>
-          </tr>
-          <tr>
-              <td align="left">10</td>
-              <td> Pierre Gasly</td>
-              <td> Red Bull Toro Rosso Honda</td>
-          </tr>
-          <tr>
-              <td align="left">55</td>
-              <td> Carlos Sainz jr.</td>
-              <td> McLaren F1 Team</td>
-          </tr>
-          <tr>
-              <td align="left">23</td>
-              <td> Alexander Albon</td>
-              <td> Aston Martin Red Bull Racing</td>
-          </tr>
-          <tr>
-              <td align="left">11</td>
-              <td> Sergio Pérez</td>
-              <td> SportPesa Racing Point F1 Team</td>
-          </tr>
-          <tr>
-              <td align="left">3</td>
-              <td> Daniel Ricciardo</td>
-              <td> Renault F1 Team</td>
-          </tr>
-          <tr>
-              <td align="left">27</td>
-              <td> Nico Hülkenberg</td>
-              <td> Renault F1 Team</td>
-          </tr>
-          <tr>
-              <td align="left">4</td>
-              <td> Lando Norris</td>
-              <td> McLaren F1 Team</td>
-          </tr>
-          <tr>
-              <td align="left">26</td>
-              <td> Daniil Kvjat</td>
-              <td> Red Bull Toro Rosso Honda</td>
-          </tr>
-          <tr>
-              <td align="left">7</td>
-              <td> Kimi Räikkönen</td>
-              <td> Alfa Romeo Racing</td>
-          </tr>
-          <tr>
-              <td align="left">18</td>
-              <td> Lance Stroll</td>
-              <td> SportPesa Racing Point F1 Team</td>
-          </tr>
-          <tr>
-              <td align="left">20</td>
-              <td> Kevin Magnussen</td>
-              <td> Haas F1 Team</td>
-          </tr>
-          <tr>
-              <td align="left">8</td>
-              <td> Romain Grosjean</td>
-              <td> Haas F1 Team</td>
-          </tr>
-          <tr>
-              <td align="left">99</td>
-              <td> Antonio Giovinazzi</td>
-              <td> Alfa Romeo Racing</td>
-          </tr>
-          <tr>
-              <td align="left">88</td>
-              <td> Robert Kubica</td>
-              <td> ROKiT Williams Racing</td>
-          </tr>
-          <tr>
-              <td align="left">63</td>
-              <td> George Russell</td>
-              <td> ROKiT Williams Racing</td>
-          </tr>
-        </table>
-      </nav>
-    </section>
+    <div class="jumbotron text-center">
+      <h1>Drivers</h1>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <nav>
+            <table style="width:100%">
+              <tr>
+                <th title="Driver nr.">Driver Nr.</th>
+                <th title="Name">Name</th>
+                <th title="Team">Team</th>
+              </tr>
+              <tr>
+                  <td align="left">44</td>
+                  <td> Lewis Hamilton</td>
+                  <td> Mercedes AMG Petronas Motorsport</td>
+              </tr>
+              <tr>
+                  <td align="left">77</td>
+                  <td> Valtteri Bottas</td>
+                  <td> Mercedes AMG Petronas Motorsport</td>
+              </tr>
+              <tr>
+                  <td align="left">16</td>
+                  <td> Charles Leclerc</td>
+                  <td> Scuderia Ferrari</td>
+              </tr>
+              <tr>
+                  <td align="left">5</td>
+                  <td> Sebastian Vettel</td>
+                  <td> Scuderia Ferrari</td>
+              </tr>
+              <tr>
+                  <td align="left">33</td>
+                  <td> Max Verstappen</td>
+                  <td> Aston Martin Red Bull Racing</td>
+              </tr>
+              <tr>
+                  <td align="left">10</td>
+                  <td> Pierre Gasly</td>
+                  <td> Red Bull Toro Rosso Honda</td>
+              </tr>
+              <tr>
+                  <td align="left">55</td>
+                  <td> Carlos Sainz jr.</td>
+                  <td> McLaren F1 Team</td>
+              </tr>
+              <tr>
+                  <td align="left">23</td>
+                  <td> Alexander Albon</td>
+                  <td> Aston Martin Red Bull Racing</td>
+              </tr>
+              <tr>
+                  <td align="left">11</td>
+                  <td> Sergio Pérez</td>
+                  <td> SportPesa Racing Point F1 Team</td>
+              </tr>
+              <tr>
+                  <td align="left">3</td>
+                  <td> Daniel Ricciardo</td>
+                  <td> Renault F1 Team</td>
+              </tr>
+              <tr>
+                  <td align="left">27</td>
+                  <td> Nico Hülkenberg</td>
+                  <td> Renault F1 Team</td>
+              </tr>
+              <tr>
+                  <td align="left">4</td>
+                  <td> Lando Norris</td>
+                  <td> McLaren F1 Team</td>
+              </tr>
+              <tr>
+                  <td align="left">26</td>
+                  <td> Daniil Kvjat</td>
+                  <td> Red Bull Toro Rosso Honda</td>
+              </tr>
+              <tr>
+                  <td align="left">7</td>
+                  <td> Kimi Räikkönen</td>
+                  <td> Alfa Romeo Racing</td>
+              </tr>
+              <tr>
+                  <td align="left">18</td>
+                  <td> Lance Stroll</td>
+                  <td> SportPesa Racing Point F1 Team</td>
+              </tr>
+              <tr>
+                  <td align="left">20</td>
+                  <td> Kevin Magnussen</td>
+                  <td> Haas F1 Team</td>
+              </tr>
+              <tr>
+                  <td align="left">8</td>
+                  <td> Romain Grosjean</td>
+                  <td> Haas F1 Team</td>
+              </tr>
+              <tr>
+                  <td align="left">99</td>
+                  <td> Antonio Giovinazzi</td>
+                  <td> Alfa Romeo Racing</td>
+              </tr>
+              <tr>
+                  <td align="left">88</td>
+                  <td> Robert Kubica</td>
+                  <td> ROKiT Williams Racing</td>
+              </tr>
+              <tr>
+                  <td align="left">63</td>
+                  <td> George Russell</td>
+                  <td> ROKiT Williams Racing</td>
+              </tr>
+            </table>
+          </nav>
+        </div>
+        <div class="col-sm">
+          <image>
+            <img class="image" src="https://i.redd.it/g942yig8plm21.jpg"
+              height="400" width="650">
+          </image>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
