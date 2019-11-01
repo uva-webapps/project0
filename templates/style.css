@@ -2,10 +2,23 @@ h1 {
   color: red;
 }
 
-button {
+#drivers_name {
+  color: DarkSlateGray;
+  font-size: 18px;
+}
+
+.btn, .btn-danger, .btn-primary {
   width: 150px;
   height: 30px;
   font-size: 20px;
+}
+
+.btn-primary {
+  height: 35px;
+}
+
+.btn-danger {
+  font-size: 10px;
 }
 
 button:hover {
