@@ -1,3 +1,3 @@
-# Project 0
+# Website Name
 
-Web Programming with Python and JavaScript
+TODO: Describe your website here and provide a link to the live version on GitHub Pages.
